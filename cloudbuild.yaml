@@ -10,6 +10,6 @@ steps:
         '--delivery-pipeline=ml-sales-prediction-dp-rihel',
         '--region=us-central1',
         '--release-targets=dev',
-        '--images=ml-app=gcr.io/$PROJECT_ID/ml-sales-prediction-rihel:$SHORT_SHA'
+        '--images=ml-sales-prediction-rihel=gcr.io/$PROJECT_ID/ml-sales-prediction-rihel:$SHORT_SHA'
       ]
 

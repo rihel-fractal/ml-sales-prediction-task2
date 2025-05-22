@@ -6,4 +6,4 @@ spec:
   template:
     spec:
       containers:
-      - image: us-central1-docker.pkg.dev/faa-gcp-training-14-kfa-0808/faa-ar-rihel/ml-sales-prediction-rihel
+      - image: ml-sales-prediction-rihel
