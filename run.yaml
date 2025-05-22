@@ -1,0 +1,9 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: ml-sales-prediction-rihel
+spec:
+  template:
+    spec:
+      containers:
+      - image: us-central1-docker.pkg.dev/faa-gcp-training-14-kfa-0808/faa-ar-rihel/ml-sales-prediction-rihel

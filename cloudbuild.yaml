@@ -1,0 +1,15 @@
+steps:
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      [
+        'deploy',
+        'releases',
+        'create',
+        'release-${SHORT_SHA}',  # Unique release name
+        '--delivery-pipeline=ml-sales-prediction-dp-rihel',
+        '--region=us-central1',
+        '--release-targets=dev',
+        '--images=ml-app=gcr.io/$PROJECT_ID/ml-sales-prediction-rihel:$SHORT_SHA'
+      ]
+
